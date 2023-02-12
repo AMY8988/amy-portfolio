@@ -1,0 +1,225 @@
+@import "components/nav";
+@import "components/loader";
+@import "about-page";
+
+.light-mode{
+//button animation 
+@mixin btn(){
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.overlay{
+    position: absolute;
+    background: $secondary;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: blink 0.5s linear;
+
+}
+  @keyframes blink {
+    0%{
+      height: 0px;
+      width: 0px;
+      opacity: 0.4;
+    }
+    100%{
+      height: 400px;
+      width: 400px;
+      opacity: 0;
+    }
+}
+
+
+
+
+
+//home
+.home{
+    background-image: url("../img/Group\ 37.png");
+    position: relative;
+    
+
+    .social-contact{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+
+        .bi{
+            text-shadow: 0 0 5px #00000055;
+        }
+
+        .bar{
+            width: 5px;
+            height: 100px;
+            box-shadow:  0 0 5px #00000055;
+        }
+
+        
+    }
+
+    .chat-box{
+        position: fixed;
+        right: 8%;
+        bottom: 8%;
+        transition: 0.2s;
+        z-index: 1000;
+    
+        .chat-close-btn:hover{
+            background-color: $dark !important;
+        }
+    }
+
+    .chat{
+        position: fixed;
+        right: 8%;
+        bottom: 0%;
+        z-index: 1000;        
+
+        &:active{
+            background-color: none !important;
+            border: none !important;
+        }
+    }
+}
+
+
+
+
+
+.home-intro{
+
+    .text{
+        position: relative;
+    }
+
+    .text.sec-text::before{
+        content: "";
+        position: absolute;
+        font-size: 2rem;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: whitesmoke;
+        border-left: 3px solid $dark;
+        animation: typing 4s steps(12) infinite;
+    }
+
+    @keyframes typing {
+        40% , 60% {
+            left: 100%;
+        }
+        0%{
+            left: 0;
+        }
+    }
+
+    .about-me button{
+
+        @include btn();
+ 
+    }
+
+    .profile-photo{
+        
+        animation: pro-animate 0.5s ease-in 0s infinite both !important;
+    }
+
+    @keyframes pro-animate {
+        from{
+            transform: scaleY(0%);
+        }
+        to{
+            transform: scaleY(10%);
+        }
+    }
+    
+
+    
+}
+
+
+
+//home end
+
+//skill start
+.skill-bg{
+   background-image: url(../img/Grid-Hexagonal-White-HD-Wallpaper-Wallpaper-Stream.jpg);
+   background-size: cover;
+   height: 100vh !important;
+   filter: opacity(0.2);
+   
+}
+.skills{
+
+    position: absolute;
+    top: 100%;
+    left: 0%;
+
+
+    .title{
+        h3{
+            text-shadow: 0 4px 7px #00000080;
+        }
+    }
+
+    img{
+        width: 70px;
+        height: 70px;
+    }
+
+    
+}
+
+//skill end
+
+//project start
+
+
+
+.projects{
+
+    background-image: url("../img/Group\ 37.png");
+    background-size: contain;
+
+    .project-cards{
+        overflow: hidden;
+        transition: 0.6s;
+        img{
+            transition: 0.6s;
+        }
+
+        &:hover{
+            box-shadow: 0 0 10px #00000080 !important;
+            img{ 
+                transform: scale(1.09);
+            }
+        }
+    }
+}
+//project end
+
+
+//contact start
+
+.contact{
+    background-image: url(../img/Rectangle\ 23.png);
+    background-size: cover;
+
+    .contact-text{
+        cursor: pointer;
+    }
+}
+//contact end
+
+@media only screen and (max-width:800px){
+    .skill-bg{
+        background-size: contain;
+    }
+}
+
+}

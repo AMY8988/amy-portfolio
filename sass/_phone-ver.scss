@@ -1,0 +1,203 @@
+@media only screen and (max-width:576px) {
+    .cursor{
+        display: none !important;
+    }
+
+    .light-mode{
+            .nav{
+
+        background-color: $dark !important;
+        justify-content: space-between !important;
+        
+
+        .title{
+            background-color: $dark !important;
+            box-shadow: none;
+            width: 300px;
+            text-align: start !important;
+           
+            h5{
+                margin-bottom: 0 !important;
+            }
+        }
+    
+        .mode-change{
+            
+            position: absolute !important;
+            right: 1% !important;
+            
+            a{
+
+                border: 2px solid $black;
+                border-top: none;
+                border-radius: 0 0 5px 5px;
+               
+                &:hover{
+                    color: $secondary !important;
+                    background-color: $dark !important;
+                    
+                }
+            }
+              
+            i:hover{
+                color: $primary !important;
+            }
+        }
+    }
+
+    .home{
+        background-image: url("../img/Group\ 37.png");
+        background-size: contain;
+        
+        
+    
+        .social-contact{
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+    
+            .bi{
+                text-shadow: 0 0 5px #00000055;
+            }
+    
+            .bar{
+                width: 5px;
+                height: 100px;
+                box-shadow:  0 0 5px #00000055;
+            }
+        }
+
+        
+    }
+
+    
+    .skills{
+        img{
+            width: 35px !important;
+            height: 35px !important;
+        }
+    }
+
+    
+    .service-bg{
+        background-image: url("../img/pngegg\ \(5\).png");
+        background-size: cover;
+        height: 200vh !important;
+        filter: opacity(0.2);
+    }
+
+    .service{
+        .sec-row{
+            width: 100% !important;
+        }
+    }
+
+    .contact{
+        background-image: url("../img/Rectangle.png");
+        background-size: cover;
+    }
+
+
+    }
+
+
+
+    //dark-mode
+    .dark-mode{
+        
+            .cursor{
+                display: none !important;
+            }
+            .nav{
+        
+                background-color: #000000 !important;
+                border: 1px solid $primary;
+                box-shadow: 0 0 3px $primary , inset 0 0 3px $primary;
+                justify-content: space-between !important;
+        
+                .title{
+                    background-color: transparent !important;
+                    border-radius: 0 !important;
+                    box-shadow: none !important;
+                    border: none !important;
+                    width: 300px;
+                    text-align: start !important;
+                   
+                    h5{
+                        margin-bottom: 0 !important;
+                    }
+                }
+            
+                .light-mode-link{
+                    background-color: transparent !important;
+                    box-shadow: none !important;
+                    border: none !important;
+                }
+                .light-mode-change{
+                    
+                    position: absolute !important;
+                    right: 1% !important;
+                   text-align: end;
+                      
+                    i:hover{
+                        color: $primary !important;
+                    }
+                }
+            }
+        
+            .home{
+                background-image: url("../img/Group\ 37.png");
+                background-size: contain;
+                
+                
+            
+                .social-contact{
+                    position: absolute;
+                    bottom: 10%;
+                    left: 5%;
+            
+                    .bi{
+                        text-shadow: 0 0 5px #00000055;
+                    }
+            
+                    .bar{
+                        width: 5px;
+                        height: 100px;
+                        box-shadow:  0 0 5px #00000055;
+                    }
+                }
+        
+                
+            }
+        
+            .service-bg{
+                background-image: url("../img/dark-line.png") ;
+                background-size: cover;
+                height: 200vh ;
+               
+            }
+        
+            .service{
+                .sec-row{
+                    width: 100% !important;
+                }
+            }
+        
+            
+            .skills{
+                img{
+                    width: 35px !important;
+                    height: 35px !important;
+                }
+            }
+        
+            .contact{
+                background-image: url("../img/d-gradiance-phne.png");
+                background-size: cover;
+            }
+        
+            
+        
+    }
+    
+}

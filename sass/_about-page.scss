@@ -1,0 +1,172 @@
+.light-mode{
+
+.about-bg{
+    background-image: url("../img/pngegg\ \(5\).png");
+    background-size: cover;
+    height: 100vh !important;
+    filter: opacity(0.2);
+}
+
+.about-page{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    
+
+    .social-contact{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+
+        .bi{
+            text-shadow: 0 0 5px #00000055;
+        }
+
+        .bar{
+            width: 5px;
+            height: 100px;
+            box-shadow:  0 0 5px #00000055;
+        }
+
+        
+    }
+
+    .chat-box{
+        right: 8%;
+        bottom: 8%;
+        transition: 0.2s;
+        z-index: 1000;
+
+        .chat-close-btn:hover{
+            background-color: $dark !important;
+        }
+    }
+
+    .chat{
+        
+        right: 8%;
+        bottom: 0%;
+        z-index: 1000;
+        
+
+        &:active{
+            background-color: none !important;
+            border: none !important;
+        }
+    }
+
+    p::first-letter{
+        font-size:200%;
+    }
+}
+
+.service-bg{
+    background-image: url("../img/pngegg\ \(5\).png");
+    background-size: cover;
+    height: 100vh ;
+    filter: opacity(0.2);
+}
+
+.service{
+    position: absolute;
+    top: 100%;
+    left: 15%;
+}
+
+}
+
+
+//dark mode
+.dark-mode{
+
+    //about-page
+ .about-bg{
+    background-image: url("../img/dark-hexpng.png") !important;
+    background-size: cover;
+    height: 100vh !important;
+    
+}
+
+.about-page{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    
+    @mixin neuon{
+        border: 2px solid $primary;
+        box-shadow:  0 0 7px $primary , inset 0 0 7px $primary;
+    }
+    .nav{
+        .title{
+            @include neuon();
+         }
+         
+         .light-mode-link{
+             @include neuon();
+         }
+
+         
+    }
+
+    .social-contact{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+
+        .bi{
+            text-shadow: 0 0 5px #00000055;
+        }
+
+        .bar{
+            width: 5px;
+            height: 100px;
+            box-shadow:  0 0 5px #00000055;
+        }
+
+        
+    }
+
+    .chat-box{
+        position: absolute;
+        right: 8%;
+        bottom: 8%;
+        transition: 0.2s;
+        z-index: 1000;
+
+        .chat-close-btn:hover{
+            background-color: $dark !important;
+        }
+    }
+
+    .chat{
+        position: absolute;
+        right: 8%;
+        bottom: 0%;
+        z-index: 1000;
+        color: $secondary !important;
+
+        &:active{
+            background-color: none !important;
+            border: none !important;
+        }
+    }
+
+    p::first-letter{
+        font-size:200%;
+    }
+}
+
+.service-bg{
+    background-image: url("../img/dark-line.png");
+    background-size: cover;
+    height: 100vh ;
+   
+}
+
+.service{
+    position: absolute;
+    top: 100%;
+    left: 15%;
+}
+
+}

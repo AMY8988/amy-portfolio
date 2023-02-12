@@ -1,0 +1,35 @@
+$primary : #FCF41A;
+$secondary: #E4C46E;
+$dark : #0F0F0F;
+$light : #f3f3f3;
+
+$theme-colors : (
+    "primary" : $primary,
+    "secondary": $secondary,
+    "light": $light,
+    "dark": $dark
+);
+
+@each $key,$val in $theme-colors {
+    //eg. .text-primary
+    .text-#{$key} {
+        color: $val;
+    };
+
+    .bg-#{$key} {
+        background-color: $val;
+    };
+
+    @for $i from 1 through 5 {
+        // eg. .text-primary-1
+        .text-#{$key}-#{$i} {
+            color: mix( white, $val, $i * 10%);
+        }
+
+        .bg-#{$key}-#{$i} {
+            background-color: mix( white,  $val, $i * 10%);
+        }
+    }
+
+  
+}

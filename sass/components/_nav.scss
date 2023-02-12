@@ -1,0 +1,31 @@
+//nav-bar
+.nav{
+   
+    .title{
+        width: 400px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+
+   
+    .mode-change{
+        position: absolute;
+        top: 0% !important;
+        right: 8% !important;
+       
+       
+        a{
+
+            border: 2px solid $primary;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+           
+            &:hover{
+                color: $secondary !important;
+                background-color: $dark !important;
+                
+            }
+        }
+        
+    }
+}
