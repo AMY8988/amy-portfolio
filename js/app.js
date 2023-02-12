@@ -6,7 +6,7 @@
             $(".loader-container").slideUp(700 , function(){
                 $(this).remove();
             })
-        } , 50 )
+        } , 700 )
         
     })
 
