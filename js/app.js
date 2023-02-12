@@ -6,7 +6,7 @@
             $(".loader-container").slideUp(700 , function(){
                 $(this).remove();
             })
-        } , 700 )
+        } , 50 )
         
     })
 
@@ -54,7 +54,7 @@
     $(window).on( "load" , function(){
         setTimeout( ()=>{
             chatBox.classList.remove("d-none");
-        } , 3000 )
+        } , 5000 )
         
         chatBtn.addEventListener("click" ,  function(){
             // chatBox.classList.remove("d-none");
