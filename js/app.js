@@ -115,25 +115,7 @@
 
     
 
-    let modeLink = document.querySelector(".mode-link");
-    let modeChange = document.querySelector(".mode-change");
-    let icon = document.getElementById("mode-icon");
 
-    modeChange.addEventListener("click" , function(){
-
-        // modeLink.setAttribute( "href" , "darkmode/d-index.html" );
-        icon.classList.remove("bi-cloud-moon");
-        icon.classList.add("bi-cloud-sun");
-    })
-
-    let lmodeLink = document.querySelector(".light-mode-link");
-    let lmodeChange = document.querySelector(".light-mode-change");
-
-    lmodeChange.addEventListener("click" , function(){
-        // lmodeLink.setAttribute( "href" , "../d-index.html" );
-        icon.classList.remove("bi-cloud-sun");
-        icon.classList.add("bi-cloud-moon");
-    })
 
     
 
